@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portal de consulta jurídica con fuentes oficiales de México y Guerrero." />
+    <title>Brújula Jurídica | México y Guerrero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#directorio">Ir al directorio</a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#inicio" aria-label="Brújula Jurídica, inicio"><span class="brand-mark">§</span><span>Brújula<br /><b>Jurídica</b></span></a>
+        <nav aria-label="Navegación principal"><a href="#directorio">Fuentes</a><a href="#como-usar">Cómo investigar</a><a href="#aviso">Aviso</a></nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">MÉXICO · GUERRERO · CONSULTA ACADÉMICA</p>
+            <h1>Investiga con fuentes que puedes <em>verificar.</em></h1>
+            <p class="hero-copy">Un punto de partida claro para encontrar legislación, jurisprudencia, sentencias, derechos humanos y recursos académicos. Hecho para estudiantes de Derecho.</p>
+            <a class="button button-primary" href="#directorio">Explorar fuentes <span aria-hidden="true">↓</span></a>
+          </div>
+          <aside class="research-card" aria-label="Regla de investigación">
+            <span class="card-icon" aria-hidden="true">✓</span>
+            <p class="eyebrow">REGLA DE ORO</p>
+            <h2>Lee, cita y confirma la vigencia.</h2>
+            <p>Una nota, resumen o versión electrónica facilita el estudio; la publicación oficial y la jurisdicción aplicable confirman el derecho vigente.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="quick-links container" aria-label="Accesos rápidos">
+        <a href="https://www.dof.gob.mx/" target="_blank" rel="noopener"><span>01</span><b>DOF</b><small>Publicación oficial federal</small></a>
+        <a href="https://www.diputados.gob.mx/LeyesBiblio/index.htm" target="_blank" rel="noopener"><span>02</span><b>Leyes federales</b><small>Textos vigentes y reformas</small></a>
+        <a href="https://sjf.scjn.gob.mx/SJFHome/Index.html" target="_blank" rel="noopener"><span>03</span><b>Semanario Judicial</b><small>Tesis y jurisprudencia</small></a>
+        <a href="https://periodicooficial.guerrero.gob.mx/" target="_blank" rel="noopener"><span>04</span><b>Periódico Oficial</b><small>Estado de Guerrero</small></a>
+      </section>
+
+      <section class="directory-section" id="directorio">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">DIRECTORIO CURADO</p><h2>Encuentra la fuente adecuada</h2></div>
+            <p id="resultCount" class="result-count" aria-live="polite"></p>
+          </div>
+          <div class="search-panel">
+            <label class="search-field"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Busca: amparo, código civil, derechos humanos…" autocomplete="off" /><span class="sr-only">Buscar fuentes</span></label>
+            <div class="filter-row" role="group" aria-label="Filtrar fuentes">
+              <button class="filter active" data-filter="Todas">Todas</button>
+              <button class="filter" data-filter="Federal">Federal</button>
+              <button class="filter" data-filter="Guerrero">Guerrero</button>
+              <button class="filter" data-filter="Jurisprudencia">Jurisprudencia</button>
+              <button class="filter" data-filter="Académica">Académica</button>
+              <button class="filter" data-filter="Noticias">Noticias</button>
+              <button class="filter favorite-filter" data-filter="Favoritas">★ Favoritas</button>
+            </div>
+          </div>
+          <div id="sourceGrid" class="source-grid"></div>
+          <p id="emptyState" class="empty-state" hidden>No encontramos una fuente con esos filtros. Intenta otro término o selecciona “Todas”.</p>
+        </div>
+      </section>
+
+      <section class="how-to" id="como-usar">
+        <div class="container">
+          <p class="eyebrow">MÉTODO BREVE</p><h2>Una consulta jurídica más confiable en 3 pasos</h2>
+          <div class="steps">
+            <article><span>1</span><h3>Ubica la norma o criterio</h3><p>Comienza en una fuente oficial y busca por tema, artículo, rubro o registro digital.</p></article>
+            <article><span>2</span><h3>Revisa la fecha y competencia</h3><p>Comprueba reformas, época, órgano emisor y si aplica al ámbito federal o de Guerrero.</p></article>
+            <article><span>3</span><h3>Conserva la referencia</h3><p>Guarda el enlace, fecha de consulta y datos de publicación para tu tarea o escrito.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice container" id="aviso">
+        <div aria-hidden="true">⚖</div><div><h2>Importante: este portal orienta, no sustituye asesoría legal.</h2><p>Los enlaces llevan a sitios externos. Antes de usar una norma, sentencia o criterio, verifica su texto, vigencia, publicación oficial y jurisdicción. Para un caso concreto, consulta a una persona profesional del Derecho o a la autoridad competente.</p></div>
+      </section>
+    </main>
+
+    <footer><div class="container footer-inner"><div><a class="brand" href="#inicio"><span class="brand-mark">§</span><span>Brújula<br /><b>Jurídica</b></span></a><p>Directorio de consulta académica para México y Guerrero.</p></div><p>Fuentes externas · Última revisión del directorio: noviembre de 2026</p></div></footer>
+    <template id="sourceTemplate"><article class="source-card"><div class="source-top"><span class="tag"></span><button class="favorite" title="Guardar en favoritas" aria-label="Guardar en favoritas">☆</button></div><h3></h3><p></p><div class="source-bottom"><span class="official-badge"></span><div><button class="copy-link">Copiar enlace</button><a class="visit-link" target="_blank" rel="noopener">Abrir <span aria-hidden="true">↗</span></a></div></div></article></template>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
